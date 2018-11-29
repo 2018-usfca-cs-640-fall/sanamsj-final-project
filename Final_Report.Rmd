@@ -1,9 +1,8 @@
 ---
 title: "Final Report: Your Title Here"
-author: "Don Francisco"
+author: "Sanam Sajjadi"
 date: "December 5, 2018"
-output:
-    github_document: default
+output:github_document: default
 bibliography: references.bib
 csl: bioinformatics.csl
 ---
@@ -15,6 +14,12 @@ knitr::opts_chunk$set(echo = TRUE)
 # Introduction
 
 Add about 2-3 pages here. Across the whole manuscript, you should cite at least 20 peer reviewed articles.
+
+
+
+
+
+
 
 # Methods
 
@@ -34,22 +39,119 @@ These are the methods you used to do your bioinformatic analyses analyses. Shoul
 
 ## Subsections are ok in the results section too
 
-```{r your-code-here}
-# Add code chunks as needed for your analyses
-# For most analyses, I would recommend splitting the
-# intensive computational part into a seperate R script file
-# and then just load your libraries and the data object here
-# using the `load()` function. Ask me for clarification if this is
-# unclear.
+```{r load-libraries, message = FALSE}
+# Be sure to install these packages before running this script
+# They can be installed either with the install.packages() function
+# or with the 'Packages' pane in RStudio
+# load general-use packages
+library("dplyr")
+library("tidyr")
+library("knitr")
+library("ggplot2")
 ```
+
+```{r load-other-libraries}
+# this package allows for the easy inclusion of literature citations in our Rmd
+# more info here: https://github.com/crsh/citr
+# and here:
+# http://rmarkdown.rstudio.com/authoring_bibliographies_and_citations.html
+library("citr")
+# These are the primary packages well use to clean and analyze the data
+# this package needs to be installed from bioconductor -- it's not on CRAN
+# see info here: https://benjjneb.github.io/dada2/dada-installation.html
+library("dada2")
+# This to export a fasta of our final denoised sequence variant
+library("seqinr")
+# To install this you have to install from GitHub
+# See more info here: https://github.com/leffj/mctoolsr
+# run this -- install.packages("devtools")
+# and then this -- devtools::install_github("leffj/mctoolsr")
+library("mctoolsr")
+# And this to visualize our results
+# it also needs to be installed from bioconductor
+library("phyloseq")
+# Be sure to load in the phyloseq data object created
+load("output/phyloseq_obj.RData")
+stopifnot(exists("phyloseq_obj"))
+```
+
 
 ```{r load-packages-and-data}
 # load packages as needed
 library("dplyr")
-
+load("output/phyloseq_obj.Rdata")
 # load data produced from analysis scripts using
 # something like load("output/processed_data.Rdata")
 ```
+
+
+
+```{r make-mediterranean-diet-plot}
+# So many sequences in this data set
+# Now we want to subset this data
+# Now we want to look
+# At gut microbiome of children with
+# Mediterranean diet
+# We look at the Class level
+mediterranean_phyloseq_obj <- subset_samples(phyloseq_obj,
+                              special_diet == "mediterranean diet")
+plot_bar(mediterranean_phyloseq_obj, x = "Class")
+```
+
+
+**Figure1**: This figure is a plot bar that shows the different classes of gut microbiome in children with Mediterranean diet.
+
+Most of the bacteria were from Clostridia and  Bacteroidia classes.
+
+
+
+
+
+
+
+
+
+
+```{r}
+vegeterian_phyloseq_obj <- subset_samples(phyloseq_obj,
+special_diet ==
+"vegeterian diet (derived from sorghum, millet, black eyed pea)")
+plot_bar(vegeterian_phyloseq_obj, x = "Class")
+```
+
+```{r}
+natural_phyloseq_obj <- subset_samples(phyloseq_obj,
+birth_delivery == "natural childbirth")
+plot_bar(natural_phyloseq_obj, x = "Class")
+```
+
+```{r}
+cesarean_phyloseq_obj <- subset_samples(phyloseq_obj,
+birth_delivery == "cesarean childbirth")
+plot_bar(cesarean_phyloseq_obj, x = "Class")
+```
+
+
+```{r}
+geographic_phyloseq_obj <- subset_samples(phyloseq_obj,
+geographic_location_country ==
+"Burkina Faso:Boulkiemde province,Boulpon")
+plot_bar(geographic_phyloseq_obj, x = "Class")
+```
+
+
+
+
+
+
+
+
+```{r}
+geographic_phyloseq_obj <- subset_samples(phyloseq_obj,
+geographic_location_country == "Italy:Toscany, Florence")
+plot_bar(geographic_phyloseq_obj, x = "Class")
+```
+
 
 In addition to a minimum of 5-8 figures/tables (and associated captions), you should include sufficient text in this section to describe what your findings were. Remember that in the results section you just describe what you found, but you don't interpret it - that happens in the discussion. 2-3 pages.
 
