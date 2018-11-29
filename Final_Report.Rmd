@@ -87,10 +87,11 @@ load("output/phyloseq_obj.Rdata")
 
 
 ```{r make-mediterranean-diet-plot}
+# We want to see the impact of diet
+# On gut microbiome and as there are
 # So many sequences in this data set
 # Now we want to subset this data
-# Now we want to look
-# At gut microbiome of children with
+# And look At gut microbiome of children with
 # Mediterranean diet
 # We look at the Class level
 mediterranean_phyloseq_obj <- subset_samples(phyloseq_obj,
@@ -101,23 +102,28 @@ plot_bar(mediterranean_phyloseq_obj, x = "Class")
 
 **Figure1**: This figure is a plot bar that shows the different classes of gut microbiome in children with Mediterranean diet.
 
-Most of the bacteria were from Clostridia and  Bacteroidia classes.
+Most of the bacteria were from Clostridia class.
 
 
-
-
-
-
-
-
-
-
-```{r}
+```{r make-vegeterian-diet-plot}
+# We want to compare Mediterranean diet
+# With vegeterian diet and
+# AS we have a large data set
+# We want to subset our dataset
+# To look at gut microbiome of children
+# With vegeterian diet
+# Again we look at Class level
 vegeterian_phyloseq_obj <- subset_samples(phyloseq_obj,
 special_diet ==
 "vegeterian diet (derived from sorghum, millet, black eyed pea)")
 plot_bar(vegeterian_phyloseq_obj, x = "Class")
 ```
+
+**Figure2**: This figure is a plot bar that shows the different classes of bacteria in children with vegeterian diet.
+
+Most of the sequences where from Bacteroidia class.
+
+
 
 ```{r}
 natural_phyloseq_obj <- subset_samples(phyloseq_obj,
