@@ -125,11 +125,22 @@ Most of the sequences where from Bacteroidia class.
 
 
 
-```{r}
+```{r make-natural-childbirth-plot}
+# Now we want to see the impcat of birth delivery method
+# On Children's gut microbiome
+# We subset our data set
+# To look at gut microbiome of children
+# That were born naturally
 natural_phyloseq_obj <- subset_samples(phyloseq_obj,
 birth_delivery == "natural childbirth")
 plot_bar(natural_phyloseq_obj, x = "Class")
 ```
+
+
+**Figure3**: This figure is a plot bar that shows the different classes of bacteria in children that were born naturally.
+
+Most of the bacteria were from Bacteroidia and Clostridia classes.
+
 
 ```{r}
 cesarean_phyloseq_obj <- subset_samples(phyloseq_obj,
