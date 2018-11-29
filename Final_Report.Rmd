@@ -49,7 +49,6 @@ library("tidyr")
 library("knitr")
 library("ggplot2")
 ```
-
 ```{r load-other-libraries}
 # this package allows for the easy inclusion of literature citations in our Rmd
 # more info here: https://github.com/crsh/citr
@@ -74,8 +73,6 @@ library("phyloseq")
 load("output/phyloseq_obj.RData")
 stopifnot(exists("phyloseq_obj"))
 ```
-
-
 ```{r load-packages-and-data}
 # load packages as needed
 library("dplyr")
@@ -131,6 +128,7 @@ Most of the sequences where from Bacteroidia class.
 # We subset our data set
 # To look at gut microbiome of children
 # That were born naturally
+# We look at Class level
 natural_phyloseq_obj <- subset_samples(phyloseq_obj,
 birth_delivery == "natural childbirth")
 plot_bar(natural_phyloseq_obj, x = "Class")
@@ -142,32 +140,57 @@ plot_bar(natural_phyloseq_obj, x = "Class")
 Most of the bacteria were from Bacteroidia and Clostridia classes.
 
 
-```{r}
+```{r make-Cesarean-plot}
+# now we want to look at microbiome of
+# children's gut that were born with Cesarean
+# As our data set is big, we make a new subset 
+# For cesarean and then we look
+# At different Classes
 cesarean_phyloseq_obj <- subset_samples(phyloseq_obj,
 birth_delivery == "cesarean childbirth")
 plot_bar(cesarean_phyloseq_obj, x = "Class")
 ```
 
+**Figure4**: This figure is a plot bar that looks at different Classes of gut bacteria in children who were born with Cesarean section.
 
-```{r}
+Most of the bacteria were from Clostridia class.
+
+
+
+
+```{r make-geographic-Burkina-plot}
+# We want to see the impact of geographical location
+# So we have to to subset our data for specific region
+# Now we subset our big data
+# To just look at Burkina Faso
 geographic_phyloseq_obj <- subset_samples(phyloseq_obj,
 geographic_location_country ==
 "Burkina Faso:Boulkiemde province,Boulpon")
 plot_bar(geographic_phyloseq_obj, x = "Class")
 ```
 
+**Figure5**: This graph is a plot bar that looks at different classes of gut bacteria in children from Burkina Faso.
+
+Bacteroidia has the highest abundance among other classes.
 
 
 
 
-
-
-
-```{r}
+```{r make-geographic-Florence-plot}
+# After Burkina, now we want to look at 
+# Gur bacteria in children from Florence
+# So we have to subset our data to see different
+# Classes of bacteria in their gut
+# We look at Class level
 geographic_phyloseq_obj <- subset_samples(phyloseq_obj,
 geographic_location_country == "Italy:Toscany, Florence")
 plot_bar(geographic_phyloseq_obj, x = "Class")
 ```
+
+
+**Figure6**: This figure is a plot bar that shows different class of gut bacteria in children from Florence.
+
+Most of the bacteria were from Clostridia class.
 
 
 In addition to a minimum of 5-8 figures/tables (and associated captions), you should include sufficient text in this section to describe what your findings were. Remember that in the results section you just describe what you found, but you don't interpret it - that happens in the discussion. 2-3 pages.
