@@ -40,13 +40,26 @@ Through the expansion of microbiome research the gut microbiome has been brought
 ## Study design
 
 
+Fecal Sample Collection: De Filippo et al. gained written, informed consent from all individuals participating in the study. The fecal samples were collected by physicians one to two hours following the first eaten meal, and preserved in RNAlater at 4°C for 48 hours, then at -80°C. During transport and storage, a sample was lost, reducing BF samples to 14.
+
 ## Sample origin and sequencing
 
-Add about half a page here. In this section instead of first person (I/we), use the authors of the paper you selected, since you'll just be describing what they did, based on the methods in their paper.
+
+DNA Extraction: Once the samples were prepped for DNA extraction, De Filippo et al. took approximately 500 mg of fecal sample that was dissolved within a physiological solution. The 600 μL mixture was centrifuged at 10,000 g at 4°C for 10 minutes to obtain a pellet. The pellets were then placed in 1 mL of 1x PBS and centrifuged at 700 x g for 1 minute at 4°C. After, the supernatant was transferred into a 15 mL tube and again was centrifuged, this time at 9,000 x g for 5 minutes at 4°C. Proceeding that the pellets were suspended again in 2.8 mL of TE buffer, to which 18μL of proteinase K (20 mg/mL) and 180 μL SDS 10% (wt/vol) and 18μL of proteinase K (20 mg/mL) were added and the samples incubated at 37°C for one hour. 20 μL RNase (40 μg/mL) was placed in the tube and incubated for 5 minutes at room temperature. Next (50:50) phenol/chloroform was added, mixed, and centrifuged at 4,500 x g for 2 minutes. The top layers were moved to another tube, and this step was repeated. 1/10 volume 3M sodium acetate, at pH 5.2, and two volumes of 96% ethanol were combined. The tubes were stored at -20°C overnight and centrifuged the following morning at 9,000 x g at 4°C for 10 minutes. The resulting precipitated genomic DNA was washed twice and suspended in water. The quality of the DNA was assessed by De Filippo et al. using spectrophotometry and gel electrophoresis. Good-quality DNA was determined and processed. 
+
+
+PCR Amplification of V5-V6 Region of Bacterial 16s rRNA Genes: De Filoppo et al. had all the 16s rRNA within the sample DNA amplified using a proper set for the 784F and 1061R. The primers target the V5 and V6 variable region in the 16s rRNA. A PCR mix was created using 1x PCR buffer, 5U of FastStart Fidelity polymerase blend, as well as dNTPs from the PCR system. DNA was visualized in 1% agarose gels using SYBR safe DNA gel stain. 
+Amplicon Quantitation, Pooling, and Pyrosequencing: De Filippo et al. determined the concentrations of the amplicon DNA using: Quant-iT PicoGreen dsDNA reagent and kit. Cleaned PCR product was used in the assays. Amplicons were added to equimolar ratios in a tube and precipitated after the addition of 5M NaCl, and two volumes of 100% ethanol. The tube was centrifuged and the pellet was washed and dried before suspension in nuclease-free water. Final pooled DNA concentration was determined using a spectrophotometer. Pyrosequencing was performed using a 454 Life Sciences Genome Sequencer FLX instrument. 
+
+
+Pyrosequencing Quality Control: The pyrosequencing reads were assigned to samples with barcodes, and FASTA-formatted files were collected. Using the following criteria the sequences were checked for: near identical matches with the barcode and primer, length of about 150 nucleotides, and two undetermined bases or less. After quality check, the resulting sequences were about 260 base pairs. The data was submitted to the Sequence Read Archive or SRA using ISA tools.
+
+
+
+
 
 ## Computational
 
-These are the methods you used to do your bioinformatic analyses analyses. Should probably be between 0.5 and 1 pages. At a very minimum should include citations for DADA2 and phyloseq if you are doing an amplicon study, or other citations as appropriate.
 
 # Results
 
