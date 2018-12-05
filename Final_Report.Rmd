@@ -60,8 +60,17 @@ Pyrosequencing Quality Control: The pyrosequencing reads were assigned to sample
 
 ## Computational
 
+All metadata and relevant sequences were downloaded from NCBI website. In order to download all 29 runs in this experiment a bash script was written, the bash script is saved in scripts folder called data.sh. After downloading necessary information and metadata, a new R script was written which includes dada2 pipeline.
+The program R was used in this analysis report. General packages like “dplyr”, “tidyr”, “knitr” and “ggplot2” were installed from library to analyze the data. The citation package was also installed from library “citr”. This package was used to easily cite the references in R studio. There are also some primary packages like “dada2”, “seqinr” and “mctoolsr” that were installed for this post analysis report. “mctoolsr” package was downloaded from devtools and “phyloseq” was downloaded via bioconductor. “mctoolsr” is a package that helps with Molecular and Microbial Community Data Analysis. The name of this package stands for “Microbial Community Data Analysis Tools” and it is designed to take marker gene sequences as an input to produce taxa table. Following that, the Taxa table was created using the denoised sequences. The table is also available in a data frame called Taxa.
+
+
+The “dada2” package suggests exact amplicons sequence variants from high-throughput amplicon sequencing data, replacing the less accurate OTU clustering approach. This “dada2” package was used to clean and analyze the data, to help trim the sequences with low quality and to remove the chimeras. The corresponding tables and plots are available in the script which shows the count of the sequences before and after trimming, denoising and removing chimeras[@callahan2016dada2].  
+Following denoising procedure other related packages like “seqinr” and “phyloseq” were used. “Seqinr” package was used to export the fasta denoised sequences variants.
+I used phyloseq package and to create different plot bars. Phyloseq feature which allowed us to subset our big data set was used to look at wanted dataset[@mcmurdie2013phyloseq]. 
 
 # Results
+
+
 
 ## Subsections are ok in the results section too
 
