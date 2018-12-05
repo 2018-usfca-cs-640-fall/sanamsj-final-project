@@ -70,6 +70,20 @@ I used phyloseq package and to create different plot bars. Phyloseq feature whic
 
 # Results
 
+In order to compare the microbial composition of gut in children, their special diet is important. In this plot bar, we plot out different phyla of bacteria in children’s guts with Mediterranean diet. We can see that more than 90k of sequences were from Firmicutes phylum, around 30k of sequences were from Bacteroidetes phylum, and then small portion of the sequences were from Proteobacteria, Actinobacteria and Fusobacteria phyla (Figure 1). 
+
+In the following figure we want to plot out the gut flora in children with vegetarian diet. In this figure we can see that around 90k of sequences were from Bacteroidetes phylum, around 30k of sequences were from Firmicutes, and then small portion of the sequences were from Actinobacteria, Proteobacteria, Spirochaetes phyla. Also, there were some sequences that were unidentified in the Gene Bank but were present in our data set (Figure 2).
+
+In order to see the microbial community of gut in children that were born with different birth delivery methods we plot out the two birth methods to see their microbial composition. In the figure 3 we plot out the natural birth and we can see that most of the sequences were from Bacteroidetes and Firmicutes Phyla and then small portion of the sequences were from Actinobacetria, Fusobacteria, Proteobacteria and Spirochaetes phyla. Also, we can see that there were some other sequences that were unidentified in the Gene Bank, but they were present in our samples (Figure 3).
+
+In the figure 4 we plot out the microbial composition of children’s guts who were born with Cesarean section and we can see that most of the sequences were from Firmicutes (more than 9k sequences), around 6k of sequences were from Bacteroidetes and Proteobacteria. Small portion of the sequences were from phyla such as Actinobacteria (Figure 4). 
+
+As we want to investigate different factors that impact children’s guts microbiome composition, we want to plot out the microbial composition in different geographical location.  Figure 5 demonstrates the microbial composition of children’s guts who were from Burkina Faso region. We can see that most of the sequences were from Bacteroidetes and Firmicutes Phyla. Small portion of the sequences were from Actinobacteria, Proteobacteria and Spirochaetes Phyla (Figure 5).
+
+
+In the following figure we want to see the microbial composition of children’s guts who were from Florence region. In this figure we can see that more than 90k of sequences were from Firmicutes phylum, around 30k of sequences were from Bacteroidetes Phylum, and then small portion of the sequences were from Proteobacteria, Actinobacteria and Fusobacteria phyla.
+
+
 
 
 ## Subsections are ok in the results section too
@@ -230,13 +244,39 @@ Most of the bacteria were from Firmicutes phylum.
 
 
 
-
-
-
-In addition to a minimum of 5-8 figures/tables (and associated captions), you should include sufficient text in this section to describe what your findings were. Remember that in the results section you just describe what you found, but you don't interpret it - that happens in the discussion. 2-3 pages.
-
 # Discussion
 
-Add around 3-4 pages interpreting your results and considering future directions one might take in analyzing these data.
+Gastrointestinal microbiota has a beneficial role in children’s health. Imbalance, lack, or sometimes even high abundance of some of these microorganisms can lead to many health problems and chronic diseases. Diabetes Type Two (TDM2), obesity and immune system problems (allergies) are among the important diseases correlated with imbalance of gastrointestinal microbiome .There are different factors that may affect children’s gut microbiome. Diet, birth delivery methods (Natural birth and Cesarean Section) and environmental factors such as geographical location are known as effective factors that cause microbial composition changes. For this project first, I plotted out the gut microbial composition of children from Florence with a Mediterranean diet. Note that in this article Mediterranean diet represents a Western diet. These children eating typical Western foods which are relatively high in animal proteins such as meat, chicken and fish. They also consume sugar, starch and generally foods with high fat and low fiber. 
+
+
+We can see that there is a high abundance of Firmicutes phylum and a low abundance of Bacteroidetes in the represented population.
+In parallel to the first examination I also plotted out the microbial composition of children from a rural region in Burkina Faso with a vegetarian diet. The vegetarian diet includes locally produced and organic foods such as cereals (millet, grain, sorghum) and legumes. These children are mostly eating vegetables so generally the content of carbohydrate, fiber and plant’s protein are very high.
+We can see that the phyla present in these children’s gut are the complete opposite of those of the children with a Mediterranean diet (Western style). Most of the bacteria were from Bacteroidetes however, we can see less Firmicutes phylum in the represented population.
+All these studies confirmed the fact that Western style diet with high fatty acid and less fiber and vegetable sources may cause obesity in these children.
+Gut microbiomes have been found to be remarkably changed in humans and animal models of obesity, comprising a lower level of bacterial diversity as well as composition. For instance, lower abundance of Bacteroidetes and higher level of Firmicutes phylum.
+In the other study scientists also found that obese mice had lower level of Bacteroidetes and high level of Firmicutes. In the agreement with the findings from animal studies it seems that human obesity is also linked with high abundance of Firmicutes [@chakraborti2015new].
+The intestine of obese children and mice have been found to be enriched with Erysipelotrichia, which is a class of bacteria in the Firmicutes phylum. This class also is found to be linked with metabolic syndrome in humans.
+
+
+
+The other important factor is birth delivery method.  Based on this fact I plotted out the two different birth delivery methods: Natural birth and Cesarean section.
+In natural birth delivery method, children harbor more diverse types of bacteria. In natural birth plot which neonate pass the birth canal we can see a high abundance of Firmicutes, Bacteroidetes and a lower abundance of Actinobacteria and Proteobacteria in the represented population.
+In parallel to the natural birth figure I also plotted out the gut microbial composition of children that were born via Cesarean section. In this figure we can see a lower abundance of Bacteroidetes compared to other phyla. According to earlier observation of other researches Bacteroidetes is specifically correlated to protection against allergies, however diabetes and bowel syndrome are also common among Cesarean children [@jakobsson2014decreased].
+
+
+In Cesarean birth delivery method which children do not pass the maternal birth canal we don’t see as much of a  diversity in terms of different present phyla of bacteria.  Infants born by Cesarean section do not encounter the bacteria of the birth canal, instead they receive the bacteria from the skin and the hospital environment. As a result, the bacteria inhabiting the gastrointestinal tract following a cesarean section can differ significantly from those found in the vaginally-born infants. 
+According to De Fillipo’s article and related metadata we can see that there were only 2 Cesarean sections in this data set so it can not exactly represent the gut microbiomes of the Cesarean populations since there is not enough samples from Cesarean children.
+
+
+The last effective factor which I mentioned was geographical location. After plotting children’s gut microbiome of the two different geographical locations (Burkina Faso and Florence) I found that the results were exactly the same as their respective diet. Florence plot was the same as Mediterranean plot and Burkina Faso was also the same as vegetarian plot.  According to these results I will predict that this is likely due to indirect impact of geographical location on children’s gut microbiome. It means that geographical location may change the microbial composition within soil, water and consequently microbiomes that exist on plants and fruits. After consumption of these nutrition, children’s gut microbiome would change according to that specific region and diet. The other possible answer is that geographical location would directly change the skin’s microbial composition and indirectly change the gut microbial composition.
+To further resolve the effect of different factors like diet, birth delivery methods and geographical location on children’s gut microbiome and correlation with chronic diseases like obesity and allergies, we have to design a new trial with specific criteria.  Aim of De fillipo’s study was to investigate only impact of diet on gut microbiomes, however to research the impact of other factors such as birth delivery methods, we have to look at the equal number of children that were born with Cesarean and natural birth method and also exclude the gender factors by comparing those in same gender groups. The result of this trial can demonstrate how birth delivery method can shape the children’s gut microbial composition.
+Taken together these findings would support the role of birth delivery method and indirect effect of geographical location along with diet in shaping microbial communities within children’s gut.  
+Understanding how these factors such as diet, birth delivery methods and geographical location affect gut microbial composition could ultimately lead to many other useful applications, for example in medicine and treatment of chronic disease such as diabetes, immune system deficiency (allergy) and obesity. 
+
+
+
+
+
+
 
 # Sources Cited
