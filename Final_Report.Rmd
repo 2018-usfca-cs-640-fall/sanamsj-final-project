@@ -81,7 +81,7 @@ In the figure 4 we plot out the microbial composition of children’s guts who w
 As we want to investigate different factors that impact children’s guts microbiome composition, we want to plot out the microbial composition in different geographical location.  Figure 5 demonstrates the microbial composition of children’s guts who were from Burkina Faso region. We can see that most of the sequences were from Bacteroidetes and Firmicutes phyla. Small portion of the sequences were from Actinobacteria, Proteobacteria and Spirochaetes Phyla (Figure 5).
 
 
-In the following figure we want to see the microbial composition of children’s guts who were from Florence region. In this figure we can see that more than 90k of sequences were from Firmicutes phylum, around 30k of sequences were from Bacteroidetes Phylum, and then small portion of the sequences were from Proteobacteria, Actinobacteria and Fusobacteria phyla.
+In the following figure we want to see the microbial composition of children’s guts who were from Florence region. In this figure we can see that more than 90k of sequences were from Firmicutes phylum, around 30k of sequences were from Bacteroidetes Phylum, and then small portion of the sequences were from Proteobacteria, Actinobacteria and Fusobacteria phyla (Figure 6).
 
 
 
