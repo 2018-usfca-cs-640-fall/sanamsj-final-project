@@ -2,7 +2,7 @@
 title: "Final Report: Impact of Natural Birth Delivery and Vegetarian Diet on Improving Children’s Gut Microbiome Against Chronic Diseases"
 author: "Sanam Sajjadi"
 date: "December 5, 2018"
-output:github_document: default
+output: github_document
 bibliography: references.bib
 csl: bioinformatics.csl
 ---
