@@ -98,6 +98,7 @@ library("tidyr")
 library("knitr")
 library("ggplot2")
 ```
+
 ```{r load-other-libraries}
 # this package allows for the easy inclusion of literature citations in our Rmd
 # more info here: https://github.com/crsh/citr
@@ -119,7 +120,7 @@ library("mctoolsr")
 # it also needs to be installed from bioconductor
 library("phyloseq")
 # Be sure to load in the phyloseq data object created
-load("output/phyloseq_obj.RData")
+load("output/phyloseq_obj.Rdata")
 stopifnot(exists("phyloseq_obj"))
 ```
 ```{r load-packages-and-data}
