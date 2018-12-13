@@ -136,7 +136,7 @@ load("output/phyloseq_obj.Rdata")
 ```
 
 
-
+**Figure1**: Mediterranean diet 
 ```{r make-mediterranean-diet-plot}
 # We want to see the impact of diet
 # On gut microbiome and as there are
@@ -156,6 +156,7 @@ plot_bar(mediterranean_phyloseq_obj, x = "Phylum")
 Most of the bacteria were from Firmicutes phylum.
 
 
+**Figure2**: Vegeterian diet 
 ```{r make-vegeterian-diet-plot}
 # We want to compare Mediterranean diet
 # With vegeterian diet and
@@ -175,7 +176,7 @@ plot_bar(vegeterian_phyloseq_obj, x = "Phylum")
 Most of the sequences where from Bacteroidiates phylum.
 
 
-
+**Figure3**: Natural birth 
 ```{r make-natural-childbirth-plot}
 # Now we want to see the impcat of birth delivery method
 # On Children's guts microbiome
@@ -194,6 +195,7 @@ plot_bar(natural_phyloseq_obj, x = "Phylum")
 Most of the bacteria were from Firmicutes and Bacteroidetes phyla.
 
 
+**Figure**4: Cesarean Birth
 ```{r make-Cesarean-plot}
 # now we want to look at microbiome of
 # children's gut that were born with Cesarean
@@ -211,7 +213,7 @@ Most of the bacteria were from Firmicutes phylum.
 
 
 
-
+**Figure5**: Geographic location - Burkina Faso
 ```{r make-geographic-Burkina-plot}
 # We want to see the impact of geographical location
 # So we have to to subset our data for specific region
@@ -230,7 +232,7 @@ Most of the bacteria were from Bacteroidetes phylum.
 
 
 
-
+**Figure6**: Geographic location - Florence
 ```{r make-geographic-Florence-plot}
 # After Burkina, now we want to look at 
 # Gur bacteria in children from Florence
