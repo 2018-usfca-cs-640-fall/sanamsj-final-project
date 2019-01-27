@@ -1,9 +1,8 @@
 ---
-title: "Final Report: Your Title Here"
-author: "Don Francisco"
+title: "Final Report: Impact of Natural Birth Delivery and Vegetarian Diet on Improving Children’s Gut Microbiome Against Chronic Diseases"
+author: "Sanam Sajjadi"
 date: "December 5, 2018"
-output:
-    github_document: default
+output: github_document
 bibliography: references.bib
 csl: bioinformatics.csl
 ---
@@ -14,47 +13,280 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # Introduction
 
-Add about 2-3 pages here. Across the whole manuscript, you should cite at least 20 peer reviewed articles.
+The human gastrointestinal (GI) tract plays an important role within the body as the main area for nutrient breakdown and absorption. With the introduction of the Human Microbiome project, increasing light has been shed on the vast amount of microbial life that resides within the GI tract, and the overall effects that it has on the health of the human body. Investigations of the gut microbiome cover topics such as the differences in the microbiome of infants born naturally or through a cesarean section [@azad2013gut; @dominguez2010delivery;[@goedert2014diversity]; the influence of the microbiome on obesity rates [@doshuman; @koleva2015infant; @ley2005obesity; @xu2015dietary]; differences based on geographical region or biological sex [@gevers2012human; [@dominianni2015sex; @suzuki2014geographical]; and the microbiome’s correlation with dysbiosis or diseases [@backhed2012defining; @de2010impact; @larsen2010gut; @tilg2011gut]. Therefore, through current research of microbiome differences between populations using fecal samples, animal models, and sequencing for 16s rRNA, researchers will be able to better understand the microbial role that the gut microbiome plays in the overall health and physiology of the human body.
+
+
+There are many studies that looked at the variances between the gut microbes of babies that were born vaginally and those who were born through a Cesarean section (C-section). This has been a prominent area of study as researchers try to determine if the route of birth, and the consequential first type of bacterial colonization will later result in altered disease rates such as asthma, allergies, and obesity [@azad2013gut]. From these studies it has been determined that the infants birthed vaginally harbor bacterial species most similar in relation to the bacterial species present within their mother’s vagina [@dominguez2010delivery]. This study also found that the infants born through a C-section show bacterial species most common to those found in human skin flora, such as *Staphylococcus spp* [@dominguez2010delivery]. Another study also found that C section infants also have a much lower abundance of *Bacteroides* and *Bifidobacteria* leading to an increased chance of colonization of pathogenic *Clostridium difficile* [@goedert2014diversity]. Also integrated into these studies is that breast feeding an infant also is shown to promote what is classified as a healthy gut microbiome. Breast milk is shown to provide selective metabolic substrates to help beneficial bacteria to colonize infant guts [@azad2013gut]. Even as the infants grew to adults, fecal samples showed differences in the gut microbiome of individuals who were born vaginally and those born by C-section [@goedert2014diversity]. These studies show the importance that the first types of bacterial colonization can have on infants, and how this can play a role later in their lives. 
+
+
+Another large area of gut microbiome research is differences of microbial composition between lean individuals in comparison to those with obesity. Many of these studies use obese mice to compare them to lean mice, or germ free mice are used and gut microbes from an obese and lean phenotype are transplanted into the mice and rates of weight and adipose gain are observed [@koleva2015infant; @xu2015dietary]. It has been shown that the two main bacterial genera that are most responsible for contributing to whether an individual will remain lean or become obese are Bacteroidetes and Firmicutes. It is also noted in that there is supporting evidence that shows that *Bifidobacterium spp*. and *Methanobrevibacter smithii* are associated with lower BMI and overall adipose ratios [@koleva2015infant]. In obese individuals levels of Firmicutes are much higher in ratio to Bacteroidetes, this is said to contribute to increased levels of adipose formation through the ability to more efficiently harvest energy from food [@ley2005obesity].
+The elevated ratios of Firmicutes allows for increase in intestinal monosaccharide absorption, as well as increasing de novo lipogenesis. Some research has also found that reduced microbial diversity within the gut can also contribute to obesity by shifting the bacteria that are able to colonize and the abundance that the colonies are able to form [@koleva2015infant; @tilg2011gut]. Based on the correlations between the gut microbiome and obesity, it opened the door for further studies into how the microbiome can change based on other important factors. 
+
+
+Much research on the gut microbiome has focused on Western culture and the effects that it has on the bacterial composition of the gastrointestinal tract. Through cross-cultural research it has been determined that similar phyla of bacteria are generally present within human guts, although every gut microbiome’s exact makeup is inherently unique [@gevers2012human]. These common phyla are: Firmicutes, Bacteroidetes, Actinobacteria, Proteobacteria, Verrucomicrobia, TM7, Spirochaeates, and Fusobacteria [@doshuman]; @turnbaugh2009effect]. Although the normal phyla seen within the GI tract remains similar amongst populations, changes to the configuration of bacteria can change rapidly in response to diet changes, especially when changes are compared between the normal Western diet that largely consists of high fat and high sugar content, and plant polysaccharide-rich, low fat diet [@turnbaugh2009effect]. Studies have been performed on mice in which Bacteroidetes from lean mice were transplanted into obese mice to test the effects of diet on the gut microbiome. When the post transplantation obese mice were fed a diet high in fruits and vegetables the mice showed a decrease in adipose formation, and the gut microbiome began to more closely resemble that of the lean mouse. However, when the post-transplantation mouse was fed a diet high in saturated fats, the microbiome slowly began to resemble the original mouse’s gut [@xu2015dietary]. It should also be noted that what constitutes a healthy microbiome may differ based on geographical regions and the nutritional content and demands of the region, this may be able to allow researchers to identify variables present in the environment that allowed a regions gut microbiome to be sculpted the way that it is today[@suzuki2014geographical]. Along with the region and diet being a factor in the gut microbiome composition there is evidence that biological sex and the associated hormones also plays a role in determining the microbial ratios. Evidence supports that women have an overall lower ratio of Bacteroidetes in comparison to men, the study found that until puberty the gut microbiomes between men and women had very little differences, and during puberty the differentiation began.This supports the present hypothesis that sex hormone levels may play a role in maturing the gut microbiome into the differences seen between male and female microbiomes  [@dominianni2015sex]. These areas of study support that there is a base of common phyla seen across almost all human gut microbiomes, within individual variation based on a variety of factors. 
+
+
+The gut microbiome is often described as an essential ‘organ’ based on the notion that it provides the host with immune system training, pathogen protection, and disease protection. The host immune system and the gut microbiome are interconnected as the immune system shapes the overall composition and bacterial diversity within the gut, while the microbes within the gut provide signals allowing for immune development, and allow for immune responses allowing for the prevention of pathogens or diseases [@hooper2012interactions]. Another influencing factor for the determination of disease prevalence is host genetic factors that can influence microbial colonization. The subsequent colonization patterns some leading to dysbiosis and the bacterial gut ratios can ultimately contribute to the disease process [@backhed2012defining; @benson2010individuality]. A common disease that is associated with the gut microbiome is irritable bowel disease (IBD), which is associated with a decrease in gut microbes due to the use of antibiotics, and over sanitization in children who are still developing their GI microbiome [@de2010impact].  Another disease that has been an area of recent study is diabetes and the microbial influence on its development. When the development of type-1 diabetes was observed in rats, there were higher amounts of *Bacteroides spp*. found within the gut flora, in comparison to non-diabetic rats [@larsen2010gut]. This study also found that there were lower amounts of Firmicutes, while there were increased rates of colonization for Bacteroidetes and Proteobacteria within diabetic individuals when their gut microbiomes were compared with non-diabetics. There is also evidence from another study that has found similar observations that within individuals with type-2 diabetes there is an increase of Gram-negative bacteria, Bacteroidetes being noted [@tilg2011gut]. The increased levels of Bacteroidetes have been correlated to the reduced glucose tolerance, a marker for diabetes pathogenesis [@larsen2010gut]. When Bacteroidetes concentrations are decreased in diabetic mice there is a decrease in systemic inflammation and improved metabolic endotoxemia [@tilg2011gut]. With increased knowledge of how the gut microbiome effects diseases, there is a greater potential for the discovery of possible therapeutics that could target the gut and treat disease on a microbial level. 
+
+
+Through the expansion of microbiome research the gut microbiome has been brought to the forefront of human health. Through studies it has been shown that there is a significant difference in the types of microbes that colonize an infant born either vaginally or by C-section, and these differences follow the infants into adulthood and increase their rates of asthma or allergies. Other studies have also shown that different ratios of the common gut microbiome phyla Bacteroidetes and Firmicutes can increase an individual’s chance of being obese or lean. There are also diet and geographical effects that play a role in the colonization of gut microbes, as well as the ratios of the common phyla . An important role of the gut microbiome not to be overlooked is the rates of disease prevalence and progression through the differences of microbial colonies present within the GI tract. Within this report of De Filippo et al.’s research I will investigate the differences of microbiomes within individuals from two different populations from varying geographical regions, whose diets and birth delivery methods are also subsequently different. I will predict that vegetarian diet and natural birth thorough the maternal birth canal would prevent obesity, chronic diseases and allergies in these children.
+
+
+
+
 
 # Methods
 
 ## Study design
 
-Add about half a page here. In this section instead of first person (I/we), use the authors of the paper you selected, since you'll just be describing what they did, based on the methods in their paper.
+
+Fecal Sample Collection: De Filippo et al. gained written, informed consent from all individuals participating in the study. The fecal samples were collected by physicians one to two hours following the first eaten meal, and preserved in RNAlater at 4°C for 48 hours, then at -80°C. During transport and storage, a sample was lost, reducing BF samples to 14.
 
 ## Sample origin and sequencing
 
-Add about half a page here. In this section instead of first person (I/we), use the authors of the paper you selected, since you'll just be describing what they did, based on the methods in their paper.
+
+DNA Extraction: Once the samples were prepped for DNA extraction, De Filippo et al. took approximately 500 mg of fecal sample that was dissolved within a physiological solution. The 600 μL mixture was centrifuged at 10,000 g at 4°C for 10 minutes to obtain a pellet. The pellets were then placed in 1 mL of 1x PBS and centrifuged at 700 x g for 1 minute at 4°C. After, the supernatant was transferred into a 15 mL tube and again was centrifuged, this time at 9,000 x g for 5 minutes at 4°C. Proceeding that the pellets were suspended again in 2.8 mL of TE buffer, to which 18μL of proteinase K (20 mg/mL) and 180 μL SDS 10% (wt/vol) and 18μL of proteinase K (20 mg/mL) were added and the samples incubated at 37°C for one hour. 20 μL RNase (40 μg/mL) was placed in the tube and incubated for 5 minutes at room temperature. Next (50:50) phenol/chloroform was added, mixed, and centrifuged at 4,500 x g for 2 minutes. The top layers were moved to another tube, and this step was repeated. 1/10 volume 3M sodium acetate, at pH 5.2, and two volumes of 96% ethanol were combined. The tubes were stored at -20°C overnight and centrifuged the following morning at 9,000 x g at 4°C for 10 minutes. The resulting precipitated genomic DNA was washed twice and suspended in water. The quality of the DNA was assessed by De Filippo et al. using spectrophotometry and gel electrophoresis. Good-quality DNA was determined and processed. 
+
+
+PCR Amplification of V5-V6 Region of Bacterial 16s rRNA Genes: De Filoppo et al. had all the 16s rRNA within the sample DNA amplified using a proper set for the 784F and 1061R. The primers target the V5 and V6 variable region in the 16s rRNA. A PCR mix was created using 1x PCR buffer, 5U of FastStart Fidelity polymerase blend, as well as dNTPs from the PCR system. DNA was visualized in 1% agarose gels using SYBR safe DNA gel stain. 
+Amplicon Quantitation, Pooling, and Pyrosequencing: De Filippo et al. determined the concentrations of the amplicon DNA using: Quant-iT PicoGreen dsDNA reagent and kit. Cleaned PCR product was used in the assays. Amplicons were added to equimolar ratios in a tube and precipitated after the addition of 5M NaCl, and two volumes of 100% ethanol. The tube was centrifuged and the pellet was washed and dried before suspension in nuclease-free water. Final pooled DNA concentration was determined using a spectrophotometer. Pyrosequencing was performed using a 454 Life Sciences Genome Sequencer FLX instrument [@de2010impact].
+
+
+Pyrosequencing Quality Control: The pyrosequencing reads were assigned to samples with barcodes, and FASTA-formatted files were collected. Using the following criteria the sequences were checked for: near identical matches with the barcode and primer, length of about 150 nucleotides, and two undetermined bases or less. After quality check, the resulting sequences were about 260 base pairs. The data was submitted to the Sequence Read Archive or SRA using ISA tools.
+
+
+
+
 
 ## Computational
 
-These are the methods you used to do your bioinformatic analyses analyses. Should probably be between 0.5 and 1 pages. At a very minimum should include citations for DADA2 and phyloseq if you are doing an amplicon study, or other citations as appropriate.
+All metadata and relevant sequences were downloaded from NCBI website. In order to download all 29 runs in this experiment a bash script was written, the bash script is saved in scripts folder called data.sh. After downloading necessary information and metadata, a new R script was written which includes dada2 pipeline.
+The program R was used in this analysis report. General packages like “dplyr”, “tidyr”, “knitr” and “ggplot2” were installed from library to analyze the data. The citation package was also installed from library “citr”. This package was used to easily cite the references in R studio. There are also some primary packages like “dada2”, “seqinr” and “mctoolsr” that were installed for this post analysis report. “mctoolsr” package was downloaded from devtools and “phyloseq” was downloaded via bioconductor. “mctoolsr” is a package that helps with Molecular and Microbial Community Data Analysis. The name of this package stands for “Microbial Community Data Analysis Tools” and it is designed to take marker gene sequences as an input to produce taxa table. Following that, the Taxa table was created using the denoised sequences. The table is also available in a data frame called Taxa.
+
+
+The “dada2” package suggests exact amplicons sequence variants from high-throughput amplicon sequencing data, replacing the less accurate OTU clustering approach. This “dada2” package was used to clean and analyze the data, to help trim the sequences with low quality and to remove the chimeras. The corresponding tables and plots are available in the script which shows the count of the sequences before and after trimming, denoising and removing chimeras[@callahan2016dada2].  
+Following denoising procedure other related packages like “seqinr” and “phyloseq” were used. “Seqinr” package was used to export the fasta denoised sequences variants.
+I used the phyloseq package to create different plot bars. Phyloseq feature allowed us to subset our big data set to finally visualize the data and results [@mcmurdie2013phyloseq]. 
 
 # Results
 
+In order to compare the microbial composition of gut in children, their special diet is important. In this plot bar, we plot out different phyla of bacteria in children’s guts with Mediterranean diet. We can see that more than 90k of sequences were from Firmicutes phylum, around 30k of sequences were from Bacteroidetes phylum, and then small portion of the sequences were from Proteobacteria, Actinobacteria and Fusobacteria phyla (Figure 1). 
+
+
+In the following figure we want to plot out the gut flora in children with vegetarian diet. In this figure we can see that around 90k of sequences were from Bacteroidetes phylum, around 30k of sequences were from Firmicutes, and then small portion of the sequences were from Actinobacteria, Proteobacteria, Spirochaetes phyla. Also, there were some sequences that were unidentified in the Gene Bank but were present in our data set (Figure 2).
+
+
+In order to see the microbial community of gut in children that were born with different birth delivery methods we plot out the two birth methods to see their microbial composition. In the figure 3 we plot out the natural birth and we can see that most of the sequences were from Bacteroidetes and Firmicutes Phyla and then small portion of the sequences were from Actinobacetria, Fusobacteria, Proteobacteria and Spirochaetes phyla. Also, we can see that there were some other sequences that were unidentified in the Gene Bank, but they were present in our samples (Figure 3).
+
+
+In the figure 4 we plot out the microbial composition of children’s guts who were born with Cesarean section and we can see that most of the sequences were from Firmicutes (more than 9k sequences), around 6k of sequences were from Bacteroidetes and Proteobacteria. Small portion of the sequences were from phyla such as Actinobacteria (Figure 4). 
+
+
+As we want to investigate different factors that impact children’s guts microbiome composition, we want to plot out the microbial composition in different geographical location.  Figure 5 demonstrates the microbial composition of children’s guts who were from Burkina Faso region. We can see that most of the sequences were from Bacteroidetes and Firmicutes phyla. Small portion of the sequences were from Actinobacteria, Proteobacteria and Spirochaetes Phyla (Figure 5).
+
+
+In the following figure we want to see the microbial composition of children’s guts who were from Florence region. In this figure we can see that more than 90k of sequences were from Firmicutes phylum, around 30k of sequences were from Bacteroidetes Phylum, and then small portion of the sequences were from Proteobacteria, Actinobacteria and Fusobacteria phyla (Figure 6).
+
+
+
+
 ## Subsections are ok in the results section too
 
-```{r your-code-here}
-# Add code chunks as needed for your analyses
-# For most analyses, I would recommend splitting the
-# intensive computational part into a seperate R script file
-# and then just load your libraries and the data object here
-# using the `load()` function. Ask me for clarification if this is
-# unclear.
+```{r load-libraries, message = FALSE}
+# Be sure to install these packages before running this script
+# They can be installed either with the install.packages() function
+# or with the 'Packages' pane in RStudio
+# load general-use packages
+library("dplyr")
+library("tidyr")
+library("knitr")
+library("ggplot2")
 ```
 
+```{r load-other-libraries}
+# this package allows for the easy inclusion of literature citations in our Rmd
+# more info here: https://github.com/crsh/citr
+# and here:
+# http://rmarkdown.rstudio.com/authoring_bibliographies_and_citations.html
+library("citr")
+# These are the primary packages well use to clean and analyze the data
+# this package needs to be installed from bioconductor -- it's not on CRAN
+# see info here: https://benjjneb.github.io/dada2/dada-installation.html
+library("dada2")
+# This to export a fasta of our final denoised sequence variant
+library("seqinr")
+# To install this you have to install from GitHub
+# See more info here: https://github.com/leffj/mctoolsr
+# run this -- install.packages("devtools")
+# and then this -- devtools::install_github("leffj/mctoolsr")
+library("mctoolsr")
+# And this to visualize our results
+# it also needs to be installed from bioconductor
+library("phyloseq")
+# Be sure to load in the phyloseq data object created
+load("output/phyloseq_obj.Rdata")
+stopifnot(exists("phyloseq_obj"))
+```
 ```{r load-packages-and-data}
 # load packages as needed
 library("dplyr")
-
+load("output/phyloseq_obj.Rdata")
 # load data produced from analysis scripts using
 # something like load("output/processed_data.Rdata")
 ```
 
-In addition to a minimum of 5-8 figures/tables (and associated captions), you should include sufficient text in this section to describe what your findings were. Remember that in the results section you just describe what you found, but you don't interpret it - that happens in the discussion. 2-3 pages.
+
+**Figure1**: Mediterranean diet 
+```{r make-mediterranean-diet-plot}
+# We want to see the impact of diet
+# On gut microbiome and as there are
+# So many sequences in this data set
+# Now we want to subset this data
+# And look At gut microbiome of children with
+# Mediterranean diet
+# We look at the Phylum level
+mediterranean_phyloseq_obj <- subset_samples(phyloseq_obj,
+                              special_diet == "mediterranean diet")
+plot_bar(mediterranean_phyloseq_obj, x = "Phylum")
+```
+
+
+**Figure1**: This figure is a plot bar that shows the different phyla of gut microbiome in children with Mediterranean diet.
+
+Most of the bacteria were from Firmicutes phylum.
+
+
+**Figure2**: Vegeterian diet 
+```{r make-vegeterian-diet-plot}
+# We want to compare Mediterranean diet
+# With vegeterian diet and
+# AS we have a large data set
+# We want to subset our dataset
+# To look at gut microbiome of children
+# With vegeterian diet
+# Again we look at Phylum level
+vegeterian_phyloseq_obj <- subset_samples(phyloseq_obj,
+special_diet ==
+"vegeterian diet (derived from sorghum, millet, black eyed pea)")
+plot_bar(vegeterian_phyloseq_obj, x = "Phylum")
+```
+
+**Figure2**: This figure is a plot bar that shows the different phyla of bacteria in children with vegeterian diet.
+
+Most of the sequences where from Bacteroidiates phylum.
+
+
+**Figure3**: Natural birth 
+```{r make-natural-childbirth-plot}
+# Now we want to see the impcat of birth delivery method
+# On Children's guts microbiome
+# We subset our data set
+# To look at gut microbiome of children
+# That were born naturally
+# We look at Phylum level
+natural_phyloseq_obj <- subset_samples(phyloseq_obj,
+birth_delivery == "natural childbirth")
+plot_bar(natural_phyloseq_obj, x = "Phylum")
+```
+
+
+**Figure3**: This figure is a plot bar that shows the different phyla of bacteria in children that were born naturally.
+
+Most of the bacteria were from Firmicutes and Bacteroidetes phyla.
+
+
+**Figure**4: Cesarean Birth
+```{r make-Cesarean-plot}
+# now we want to look at microbiome of
+# children's gut that were born with Cesarean
+# As our data set is big, we make a new subset 
+# For cesarean and then we look
+# At different Phyla
+cesarean_phyloseq_obj <- subset_samples(phyloseq_obj,
+birth_delivery == "cesarean childbirth")
+plot_bar(cesarean_phyloseq_obj, x = "Phylum")
+```
+
+**Figure4**: This figure is a plot bar that looks at different phyla of bacteria in children who were born with Cesarean section.
+
+Most of the bacteria were from Firmicutes phylum.
+
+
+
+**Figure5**: Geographic location - Burkina Faso
+```{r make-geographic-Burkina-plot}
+# We want to see the impact of geographical location
+# So we have to to subset our data for specific region
+# Now we subset our big data
+# To just look at Burkina Faso
+# We look at Phylum
+geographic_phyloseq_obj <- subset_samples(phyloseq_obj,
+geographic_location_country ==
+"Burkina Faso:Boulkiemde province,Boulpon")
+plot_bar(geographic_phyloseq_obj, x = "Phylum")
+```
+
+**Figure5**: This figure is a plot bar that looks at different phyla of bacteria in children from Burkina Faso.
+
+Most of the bacteria were from Bacteroidetes phylum.
+
+
+
+**Figure6**: Geographic location - Florence
+```{r make-geographic-Florence-plot}
+# After Burkina, now we want to look at 
+# Gur bacteria in children from Florence
+# So we have to subset our data to see different
+# Phyla of bacteria in their gut
+# We look at Phylum level
+geographic_phyloseq_obj <- subset_samples(phyloseq_obj,
+geographic_location_country == "Italy:Toscany, Florence")
+plot_bar(geographic_phyloseq_obj, x = "Phylum")
+```
+
+
+**Figure6**: This figure is a plot bar that shows different phyla of bacteria in children from Florence.
+
+Most of the bacteria were from Firmicutes phylum.
+
+
 
 # Discussion
 
-Add around 3-4 pages interpreting your results and considering future directions one might take in analyzing these data.
+Gastrointestinal microbiota has a beneficial role in children’s health. Imbalance, lack, or sometimes even high abundance of some of these microorganisms can lead to many health problems and chronic diseases. Diabetes Type Two (TDM2), obesity and immune system problems (allergies) are among the important diseases correlated with imbalance of gastrointestinal microbiome .There are different factors that may affect children’s gut microbiome. Diet, birth delivery methods (Natural birth and Cesarean Section) and environmental factors such as geographical location are known as effective factors that cause microbial composition changes. For this project first, I plotted out the gut microbial composition of children from Florence with a Mediterranean diet. Note that in this article Mediterranean diet represents a Western diet. These children eating typical Western foods which are relatively high in animal proteins such as meat, chicken and fish. They also consume sugar, starch and generally foods with high fat and low fiber. 
+We can see that there is a high abundance of Firmicutes phylum and a low abundance of Bacteroidetes in the represented population.
+
+
+In parallel to the first examination I also plotted out the microbial composition of children from a rural region in Burkina Faso with a vegetarian diet. The vegetarian diet includes locally produced and organic foods such as cereals (millet, grain, sorghum) and legumes. These children are mostly eating vegetables so generally the content of carbohydrate, fiber and plant’s protein are very high.
+We can see that the phyla present in these children’s gut are the complete opposite of those of the children with a Mediterranean diet (Western style). Most of the bacteria were from Bacteroidetes however, we can see less Firmicutes phylum in the represented population.
+All these studies confirmed the fact that Western style diet with high fatty acid and less fiber and vegetable sources may cause obesity in these children.
+Gut microbiomes have been found to be remarkably changed in humans and animal models of obesity, comprising a lower level of bacterial diversity as well as composition. For instance, lower abundance of Bacteroidetes and higher level of Firmicutes phylum.
+In the other study scientists also found that obese mice had lower level of Bacteroidetes and high level of Firmicutes. In the agreement with the findings from animal studies it seems that human obesity is also linked with high abundance of Firmicutes [@chakraborti2015new].
+The intestine of obese children and mice have been found to be enriched with Erysipelotrichia, which is a class of bacteria in the Firmicutes phylum. This class also is found to be linked with metabolic syndrome in humans.
+
+
+The other important factor is birth delivery method.  Based on this fact I plotted out the two different birth delivery methods: Natural birth and Cesarean section.
+In natural birth delivery method, children harbor more diverse types of bacteria. In natural birth plot which neonate pass the birth canal we can see a high abundance of Firmicutes, Bacteroidetes and a lower abundance of Actinobacteria and Proteobacteria in the represented population.
+In parallel to the natural birth figure I also plotted out the gut microbial composition of children that were born via Cesarean section. In this figure we can see a lower abundance of Bacteroidetes compared to other phyla. According to earlier observation of other researches Bacteroidetes is specifically correlated to protection against allergies, however diabetes and bowel syndrome are also common among Cesarean children [@jakobsson2014decreased].
+
+
+In Cesarean birth delivery method which children do not pass the maternal birth canal we don’t see as much of a diversity in terms of different present phyla of bacteria. Infants born by Cesarean section do not encounter the bacteria of the birth canal, instead they receive the bacteria from the skin and the hospital environment. As a result, the bacteria inhabiting the gastrointestinal tract following a cesarean section can differ significantly from those found in the vaginally-born infants. 
+According to De Fillipo’s article and related metadata we can see that there were only 2 Cesarean sections in this data set so it can not exactly represent the gut microbiomes of the Cesarean populations since there is not enough samples from Cesarean children.
+
+
+The last effective factor which I mentioned was geographical location. After plotting children’s gut microbiome of the two different geographical locations (Burkina Faso and Florence) I found that the results were exactly the same as their respective diet. Florence plot was the same as Mediterranean plot and Burkina Faso was also the same as vegetarian plot.  According to these results I will predict that this is likely due to indirect impact of geographical location on children’s gut microbiome. It means that geographical location may change the microbial composition within soil, water and consequently microbiomes that exist on plants and fruits. After consumption of these nutrition, children’s gut microbiome would change according to that specific region and diet. The other possible answer is that geographical location would directly change the skin’s microbial composition and indirectly change the gut microbial composition.
+
+
+To further resolve the effect of different factors like diet, birth delivery methods and geographical location on children’s gut microbiome and correlation with chronic diseases like obesity and allergies, we have to design a new trial with specific criteria.  Aim of De fillipo’s study was to investigate only impact of diet on gut microbiomes, however to research the impact of other factors such as birth delivery methods, we have to look at the equal number of children that were born with Cesarean and natural birth method and also exclude the gender factors by comparing those in the same gender groups. The result of this trial can demonstrate how birth delivery method can shape the children’s gut microbial composition. Also, acquiring a deeper knowledge about the children’s’ guts microbiome will enable us to manipulate the gut flora in order to improve health and prevent conditions such as obesity and allergies in these children. For instance, consuming Probiotics as food supplements would have beneficial effects on many conditions such as Type Two Diabetes and obesity [@kootte2012therapeutic].
+
+
+Taken together these findings would support the role of birth delivery method and indirect effect of geographical location along with diet in shaping microbial communities within children’s gut.  
+Understanding how these factors such as diet, birth delivery methods and geographical location affect gut microbial composition could ultimately lead to many other useful applications, for example in medicine and treatment of chronic disease such as diabetes, immune system deficiency (allergy) and obesity. 
+
+
+
+
+
+
 
 # Sources Cited
